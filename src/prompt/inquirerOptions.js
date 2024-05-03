@@ -1,3 +1,5 @@
+import chalk from "chalk";
+
 const initialOptions = [
   {
     type: "list",
@@ -11,13 +13,13 @@ const qrCodeOptions = [
   {
     type: "input",
     name: "qrCodeContent",
-    message: "Informe o link para gerar o QRCode:",
+    message: chalk.bgBlueBright("Informe o link para gerar o QRCode:"),
     validate: function (input) {
       try {
         new URL(input);
         return true;
       } catch (e) {
-        return "Endereço inválido.";
+        return chalk.red("Endereço inválido.");
       }
     },
   },

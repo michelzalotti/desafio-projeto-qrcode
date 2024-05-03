@@ -1,3 +1,4 @@
+import chalk from "chalk";
 import { passwordConfig } from "./config/passwordConfig.js";
 
 export function generatePassword() {
@@ -24,5 +25,5 @@ export function generatePassword() {
     password += chars[Math.floor(Math.random() * chars.length)];
   }
 
-  console.log(`Senha gerada: ${password}`);
+  console.log(chalk.bgBlue(`Senha gerada: ${password}`));
 }

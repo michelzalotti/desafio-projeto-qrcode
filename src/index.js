@@ -1,3 +1,4 @@
+import "dotenv/config";
 import inquirer from "inquirer";
 import { initialOptions } from "./prompt/inquirerOptions.js";
 import { mainHandle } from "./prompt/mainHandle.js";

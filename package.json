@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "inquirer": "^9.2.20",
     "qrcode-terminal": "^0.12.0"
   }
